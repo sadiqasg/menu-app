@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="header">
+        <h1>Items Menu App</h1>
+        <p><small>Built with HTML, CSS & JavaScript.</small></p>
+        <div class="items">
+            <button id="bill-button" onclick="getBill()">Get Bill</button>
+            <button id="cancel-button" onclick="cancel()">Cancel Selections</button>
+        </div>
+        <div id="bill-section">Select items and click the 'Get Bill' button to get your bill</div>
+    </section>
+
+    <div class="row">
+        <section class="column">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/18105/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Laptop">
+                <h3>Macbook Pro</h3>
+                <p class="price">&#8358;<span class="price">1,000,000</span></p>
+                <p><small>Comes with an iPhone, and fresh Apple :)</small></p>
+                <p><button id="1000000" onclick="getPrice(this)">Select</button></p>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/901974/pexels-photo-901974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Laptop">
+                <h3>Telescope</h3>
+                <p class="price">&#8358;<span class="price">50,000</span></p>
+                <p><small>Super powerful Telescope to gaze at the stars</small></p>
+                <p><button id="50000" onclick="getPrice(this)">Select</button></p>
+            </div>
+        </section>
+        <section class="column">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/4987522/pexels-photo-4987522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="sneakers">
+                <h3>Air Jordan</h3>
+                <p class="price">&#8358;<span class="price">100,000</span></p>
+                <p><small>Original sneakers from Nike</small></p>
+                <p><button id="100000" onclick="getPrice(this)">Select</button></p>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/128206/pexels-photo-128206.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="iPhone8">
+                <h3>Emporio Armani Watch</h3>
+                <p class="price">&#8358;<span class="price">200,000</span></p>
+                <p><small>Classic time piece</small></p>
+                <p><button id="200000" onclick="getPrice(this)">Select</button></p>
+            </div>
+        </section>
+        <section class="column">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/687811/pexels-photo-687811.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="gamepad">
+                <h3>Game Pad</h3>
+                <p class="price">&#8358;<span class="price">20,000</span></p>
+                <p><small>Top quality PS game pad</small></p>
+                <p><button id="20000" onclick="getPrice(this)">Select</button></p>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/6416/apple-desk-office-technology.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="mouse">
+                <h3>iMouse</h3>
+                <p class="price">&#8358;<span class="price">10,000</span></p>
+                <p><small>Top quality Apple Mouse</small></p>
+                <p><button id="10000" onclick="getPrice(this)">Select</button></p>
+            </div>
+        </section>
+        <section class="column">
+            <div class="card">
+                <img src="https://images.pexels.com/photos/8022352/pexels-photo-8022352.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bmw car">
+                <h3>BMW 4 Series</h3>
+                <p class="price">&#8358;<span class="price">15,000,000</span></p>
+                <p><small>Luxurious white bmw saloon</small></p>
+                <p><button id="15000000" onclick="getPrice(this)">Select</button></p>
+            </div>
+            <div class="card">
+                <img src="https://images.pexels.com/photos/818043/pexels-photo-818043.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="iPhone8">
+                <h3>iPhone 8</h3>
+                <p class="price">&#8358;<span class="price">100,000</span></p>
+                <p><small>Top quality phone, no scratch</small></p>
+                <p><button id="100000" onclick="getPrice(this)">Select</button></p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; Stutern 2021 | By Sadiq
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
